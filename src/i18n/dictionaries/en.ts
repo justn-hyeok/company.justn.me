@@ -1,0 +1,200 @@
+import type { Dictionary } from "./ko";
+
+export const en: Dictionary = {
+  meta: {
+    title: "justn — a one-person software studio building coding-agent tools",
+    description:
+      "justn is a one-person software studio that builds and runs brgr, a coding-agent orchestrator, agent-progress, a terminal progress pane, and Rapi, a personal agent. Sajurium and Bungae are built with a two-person team.",
+    ogDescription: "Tools that run coding agents in parallel, show their progress, and verify the result.",
+  },
+  nav: {
+    products: "Products",
+    approach: "Approach",
+    milestones: "Milestones",
+    founder: "Founder",
+    contact: "Contact",
+    cta: "Start a conversation",
+    ctaShort: "Contact",
+    langSwitch: "한국어",
+    langSwitchAria: "View in Korean",
+    skip: "Skip to content",
+  },
+  hero: {
+    label: "INDEPENDENT SOFTWARE STUDIO",
+    title: "justn",
+    description: "We build brgr, which runs coding agents in parallel,\nagent-progress, a progress pane for agents,\nand Rapi, a personal agent.",
+    support: "A one-person software studio. The focus is letting people see, stop and verify while agents do the work.",
+    primary: "See brgr",
+    secondary: "Start a conversation",
+    evidence: {
+      title: "brgr · real recording of three workers reporting back",
+      note: "Taken as-is from the repository README. 2x speed.",
+      links: "Available now",
+    },
+  },
+  sections: {
+    products: { index: "01 / PRODUCTS", title: "Products", lede: "Four are built and run by justn.\nTwo are built with a two-person team, where justn owns planning, design and frontend." },
+    approach: { index: "02 / APPROACH", title: "Approach" },
+    milestones: { index: "03 / MILESTONES", title: "Milestones" },
+    founder: { index: "04 / FOUNDER", title: "Founder" },
+    contact: { index: "05 / CONTACT", title: "Contact" },
+  },
+  products: {
+    groups: { own: "Built by justn", cobuilt: "Built with a team" },
+    cobuiltNote: "Two-person team · justn: planning, design, frontend",
+    flagship: "Flagship",
+    studioNode: { title: "justn", subtitle: "studio" },
+    mapAria: "Product map. Lines run from the studio to each product. Solid lines are products justn builds and runs; dashed lines are products built with a two-person team. Pressing a node jumps to that product's description.",
+    mapHint: "Press a node to jump to its description",
+    legend: { own: "built and run by justn", cobuilt: "built with a two-person team" },
+    listAria: "Jump to a product",
+    detail: {
+      status: "Status",
+      stack: "Form · stack",
+      since: "Since",
+      release: "Latest release",
+      visit: "Open product",
+      repo: "Repository",
+      install: "Install",
+      demoLabel: "Interactive demo",
+      demoNote: "Illustrative demo. Not real data or live state.",
+      recordingLabel: "Real TUI recording",
+      recordingNote: "Taken as-is from the repository docs.",
+      pendingUrl: "Domain not live yet",
+    },
+    items: {
+      brgr: {
+        role: "An orchestrator that runs coding agents in parallel",
+        summary: "When Codex or Claude Code hands work to other coding agents, brgr opens the workers and returns each result as a sealed report.",
+        description:
+          "Each worker opens in its own Herdr pane, and brgr clicks through the trust and continue prompts for it. Results come back to the owner agent as sealed reports, and a diff is applied only after an explicit accept. Failures are repeated until acknowledged. Twelve harnesses can be workers: Claude Code, Codex CLI, Gemini CLI, GitHub Copilot CLI, Pi, OpenCode, Cursor CLI, Devin CLI, Cline, GJC, OMP and Command Code.",
+        status: "v2.13.4 · on crates.io",
+        form: "Rust CLI · macOS Apple Silicon · Herdr 0.9+ · MIT",
+      },
+      "agent-progress": {
+        role: "A terminal progress pane for agent plans",
+        summary: "When a coding agent writes its plan with the ap command, a progress pane opens right under it. The user registers nothing.",
+        description:
+          "Reads the plan recorded with ap goal, ap add, ap start and ap done, and shows the goal, progress, what is happening now, what is blocked and why, and what comes next. Install with Homebrew, then run ap skill install once so agents use it on their own.",
+        status: "v3.3.0 · Homebrew",
+        form: "Rust CLI · macOS Apple Silicon · open source",
+      },
+      rapi: {
+        role: "A personal agent that collects, summarises and delivers",
+        summary: "Gathers changes from RSS, GitHub and webhooks, classifies and summarises them, and sends Discord DMs and an email newsletter.",
+        description:
+          "Receives changes from many sources in one place, removes duplicates, and summarises them on the schedule and categories you choose. Approved development tasks are handed to a coding agent with their permissions and execution state recorded. A separate crawler (rapi-crawler, Go + Playwright) collects newsletter sources.",
+        status: "v0.1.2 · running for personal use",
+        form: "Discord bot + server · open source",
+      },
+      "justn-me": {
+        role: "A resume and portfolio editor you edit and share on the web",
+        summary: "Edit resumes and portfolios field by field, export to PDF and web, and share per-company copies.",
+        description:
+          "Keeps a resume, a portfolio deck and a cover letter as base documents and creates per-company copies to share. An MCP server lets agents read and edit the same documents, and exports are print-ready PDFs.",
+        status: "Running · justn.me",
+        form: "Web app · private repository",
+      },
+      sajurium: {
+        role: "Saju reports, read as data",
+        summary: "Computes a birth chart from date and time of birth, then runs free reports, relationships, consultations and passes in one web flow.",
+        description:
+          "Start from an anonymous session and read and write chart calculation, free reports, relationship analysis, consultation answers, the product catalogue, a pass ledger and an archive against a real API. Payments, social login and push are fully built on staging behind production flags that stay off until each one is switched on separately.",
+        status: "Public prototype, running",
+        form: "Web app · two-person team (backend sasaju by a teammate)",
+      },
+      bungae: {
+        role: "Small meetups that happen within 24 hours",
+        summary: "A mobile web app for adults aged 18 to 39 to meet safely in public places within 24 hours.",
+        description:
+          "Built the participant flow: three tabs for browsing, my meetups and notifications, meetup creation, join and waitlist, the under-capacity decision, chat, check-in, feedback, reporting and blocking. Session tokens live only in memory, and the UI never guesses values the server has not sent.",
+        status: "In development",
+        form: "Mobile web · two-person team (backend by a teammate)",
+      },
+    },
+    demo: {
+      pipeline: { stages: ["collect", "normalise", "classify · summarise", "deliver"], sources: ["RSS", "GitHub", "webhooks"], outputs: ["Discord DM", "email", "blog"] },
+      editor: { title: "resume/fe", fields: ["Intro", "Team projects", "Skills"], copies: ["--toss", "--scatterlab"], export: "Export PDF" },
+      saju: { title: "Chart", pillars: ["hour", "day", "month", "year"], report: "Free report", relation: "Relationship", consult: "Consult" },
+      meetup: { title: "Today 20:00 · public place", countdown: "closes in", join: "Join", waitlist: "Waitlist", checkin: "Check in", members: "3 / 4" },
+    },
+  },
+  approach: {
+    headline: "Agents doing the work does not mean\npeople have to lose track of it.",
+    body:
+      "We build tools where you can see what is happening, step in when you need to, and check the result. So every product asks the same questions. What is going on right now. Can it be stopped or undone. How is the result proven. What the screen shows has to be the real state, and automation must never do the same thing twice.",
+    principles: ["visible", "interruptible", "verifiable"],
+  },
+  milestones: {
+    lede: "Dates come from GitHub releases and dated records in the repositories. Repository creation dates are not listed.",
+    evidence: "Evidence",
+    items: {
+      "ap-3-3-0": { title: "agent-progress v3.3.0", body: "Progress pane redesigned: lines by role (blocked, now, next, done), gradient fill, double vertical resolution, configurable theme." },
+      "brgr-2-13-4": { title: "brgr v2.13.4 · crates.io", body: "brgr-cli published on crates.io. Adds a notice for stale harness registrations and fixes revisions of headless runs." },
+      "sajurium-flags": { title: "Sajurium production flags split", body: "Payments, social login and push built end to end with test keys, with three production flags that can be switched on and rolled back one feature at a time." },
+      "rapi-0-1-0": { title: "Rapi v0.1.0, first release", body: "First public version of the Discord bot, the collect, summarise and deliver flow, and retention policy. v0.1.2 the same day added the data deletion request flow." },
+      "studio-start": { title: "Studio started", body: "First commit of justn.me. The first versions of six products followed over the next six weeks." },
+    },
+  },
+  founder: {
+    name: "Hwang",
+    role: "Founder · Frontend & Product Engineer",
+    body:
+      "A one-person indie startup. I find and fix the places where user flows and system state drift apart, and design complex UI state, input, validation, submission, autosave and failure recovery as one product flow. Code and results suggested by AI are checked with tests and real screens before they ship.",
+    stackLabel: "Mostly working in",
+    stack: ["React", "Next.js", "TypeScript", "Rust (CLI)"],
+    ossLabel: "Open source published",
+    oss: ["brgr", "agent-progress", "rapi-agent"],
+    links: { github: "GitHub", portfolio: "Portfolio" },
+  },
+  contact: {
+    headline: "If you are building something,\nlet's talk.",
+    body: "Product collaboration, adopting a tool, or a small question are all welcome. Email is read and answered directly.",
+    copy: "Copy email",
+    copied: "Copied",
+    copyFailed: "Copy failed · select it manually",
+    mail: "Send email",
+    github: "GitHub",
+  },
+  footer: {
+    rights: "© 2026 justn. All rights reserved.",
+    terms: "Terms",
+    privacy: "Privacy",
+    language: "Language",
+    studio: "One-person software studio · South Korea",
+  },
+  notFound: {
+    title: "Page not found",
+    body: "The address has changed or the page does not exist.",
+    home: "Back to start",
+  },
+  legal: {
+    updated: "Last updated",
+    back: "Back to start",
+    terms: {
+      title: "Terms of Use",
+      intro: "These terms set the conditions for using company.justn.me (the \"Site\"), operated by justn (the \"Studio\"). The Site is a static, informational website that introduces the Studio and its products.",
+      sections: [
+        { h: "1. Nature of the Site", p: ["The Site provides no sign-up, login, payment or user content upload features.", "Each product introduced on the Site runs separately at its own address, and its own terms are provided there. Sajurium and Bungae are built with a two-person team."] },
+        { h: "2. Intellectual property", p: ["Unless stated otherwise, the text, design, images and code of the Site belong to the Studio.", "Products published as open source follow the licence stated in each repository."] },
+        { h: "3. External links", p: ["The Site links to external sites such as GitHub. The Studio is not responsible for the content or operation of external sites."] },
+        { h: "4. No warranty", p: ["The Studio tries to keep the information accurate as of the time of writing, but product status and release information may change without notice."] },
+        { h: "5. Changes", p: ["When these terms change, the revision date is shown on this page."] },
+        { h: "6. Contact", p: ["Questions about these terms: ceo@justn.me."] },
+      ],
+    },
+    privacy: {
+      title: "Privacy Policy",
+      intro: "This policy explains how justn (the \"Studio\") handles personal data on company.justn.me (the \"Site\"). The Site is a static website with no forms or account features that collect visitors' personal data.",
+      sections: [
+        { h: "1. Data collected", p: ["The Site does not ask visitors for a name, email address, contact details or any other personal data.", "No analytics tools, advertising identifiers or tracking pixels are used."] },
+        { h: "2. Cookies", p: ["The Site uses a single functional cookie (NEXT_LOCALE) to remember your language choice. It only holds the value \"ko\" or \"en\" and does not identify you. You can delete it in your browser settings."] },
+        { h: "3. Email", p: ["If you email ceo@justn.me, your email address and message are kept in the Studio's mailbox in order to reply. They are not used for any other purpose and are deleted on request."] },
+        { h: "4. Hosting", p: ["The Site is served from a hosting provider's infrastructure. The provider may process access logs (IP address, request time, request path and similar) under its own policy to provide and secure the service."] },
+        { h: "5. External services", p: ["External sites linked from the Site, such as GitHub, follow their own privacy policies."] },
+        { h: "6. Changes", p: ["When this policy changes, the revision date is shown on this page."] },
+        { h: "7. Contact", p: ["Questions about personal data: ceo@justn.me."] },
+      ],
+    },
+  },
+};

@@ -1,0 +1,202 @@
+import type { ProductId } from "@/content/products";
+
+export const ko = {
+  meta: {
+    title: "justn — 코딩 에이전트 도구를 만드는 1인 소프트웨어 스튜디오",
+    description:
+      "justn은 코딩 에이전트 오케스트레이터 brgr, 터미널 진행 창 agent-progress, 개인 에이전트 라피를 만들고 운영하는 1인 소프트웨어 스튜디오입니다. 사주리움과 벙개는 2인 팀에서 함께 만듭니다.",
+    ogDescription: "코딩 에이전트를 병렬로 돌리고, 진행을 보여주고, 결과를 확인하는 도구를 만듭니다.",
+  },
+  nav: {
+    products: "제품",
+    approach: "원칙",
+    milestones: "기록",
+    founder: "만드는 사람",
+    contact: "연락",
+    cta: "이야기 나누기",
+    ctaShort: "연락",
+    langSwitch: "English",
+    langSwitchAria: "영어로 보기",
+    skip: "본문으로 건너뛰기",
+  },
+  hero: {
+    label: "INDEPENDENT SOFTWARE STUDIO",
+    title: "justn",
+    description: "코딩 에이전트를 병렬로 돌리는 brgr,\n에이전트 진행 창 agent-progress,\n개인 에이전트 라피를 만듭니다.",
+    support: "1인 소프트웨어 스튜디오입니다. 에이전트가 일하는 동안 사람이 보고, 멈추고, 확인할 수 있게 만드는 데 집중합니다.",
+    primary: "brgr 보기",
+    secondary: "이야기 나누기",
+    evidence: {
+      title: "brgr · 워커 세 개가 보고서를 돌려주는 실제 녹화",
+      note: "저장소 README의 데모를 그대로 가져왔습니다. 2배속.",
+      links: "지금 쓸 수 있는 것",
+    },
+  },
+  sections: {
+    products: { index: "01 / PRODUCTS", title: "제품", lede: "네 개는 justn이 만들고 운영합니다.\n두 개는 2인 팀에서 기획·디자인·프론트엔드를 맡아 함께 만듭니다." },
+    approach: { index: "02 / APPROACH", title: "원칙" },
+    milestones: { index: "03 / MILESTONES", title: "기록" },
+    founder: { index: "04 / FOUNDER", title: "만드는 사람" },
+    contact: { index: "05 / CONTACT", title: "연락" },
+  },
+  products: {
+    groups: { own: "justn이 만드는 제품", cobuilt: "함께 만드는 제품" },
+    cobuiltNote: "2인 팀 · justn 담당: 기획·디자인·프론트엔드",
+    flagship: "대표 제품",
+    studioNode: { title: "justn", subtitle: "스튜디오" },
+    mapAria: "제품 지도. 스튜디오에서 각 제품으로 선이 이어집니다. 실선은 justn이 만들고 운영하는 제품, 점선은 2인 팀에서 함께 만드는 제품입니다. 노드를 누르면 해당 제품 설명으로 이동합니다.",
+    mapHint: "노드를 누르면 설명으로 이동합니다",
+    legend: { own: "justn 제작·운영", cobuilt: "2인 팀 공동 제작" },
+    listAria: "제품 바로가기",
+    detail: {
+      status: "상태",
+      stack: "형태 · 기술",
+      since: "시작",
+      release: "최신 릴리스",
+      visit: "제품 열기",
+      repo: "저장소",
+      install: "설치",
+      demoLabel: "Interactive demo",
+      demoNote: "설명용 데모입니다. 실제 데이터나 운영 상태가 아닙니다.",
+      recordingLabel: "실제 TUI 녹화",
+      recordingNote: "저장소 문서의 녹화를 그대로 가져왔습니다.",
+      pendingUrl: "도메인 준비 중",
+    },
+    items: {
+      brgr: {
+        role: "코딩 에이전트를 병렬로 돌리는 오케스트레이터",
+        summary: "Codex나 Claude Code가 다른 코딩 에이전트에게 일을 넘기면, brgr가 워커를 띄우고 결과를 봉인된 보고서로 돌려줍니다.",
+        description:
+          "워커는 각자 Herdr pane에서 열리고, 신뢰·계속 프롬프트는 brgr가 대신 넘깁니다. 결과는 봉인된 보고서로 오너 에이전트에게 돌아오고, diff는 명시적 accept 뒤에만 적용됩니다. 실패는 확인할 때까지 반복해서 알립니다. 워커로 쓸 수 있는 하네스는 12개입니다: Claude Code, Codex CLI, Gemini CLI, GitHub Copilot CLI, Pi, OpenCode, Cursor CLI, Devin CLI, Cline, GJC, OMP, Command Code.",
+        status: "v2.13.4 · crates.io 배포",
+        form: "Rust CLI · macOS Apple Silicon · Herdr 0.9+ · MIT",
+      },
+      "agent-progress": {
+        role: "에이전트 작업 계획을 보여주는 터미널 진행 창",
+        summary: "에이전트가 ap 명령으로 계획을 적으면, 바로 아래 pane에 진행 창이 열립니다. 사용자는 아무것도 등록하지 않습니다.",
+        description:
+          "ap goal, ap add, ap start, ap done으로 기록된 계획을 읽어 목표, 진행률, 지금 하는 일, 막힌 이유, 다음 일을 보여줍니다. Homebrew로 설치하고 ap skill install 한 번으로 에이전트가 스스로 쓰게 합니다.",
+        status: "v3.3.0 · Homebrew",
+        form: "Rust CLI · macOS Apple Silicon · 오픈소스",
+      },
+      rapi: {
+        role: "수집하고 요약해서 전달하는 개인 에이전트",
+        summary: "RSS·GitHub·웹훅의 변화를 모아 분류·요약하고 Discord DM과 이메일 뉴스레터로 보냅니다.",
+        description:
+          "여러 출처의 변화를 한곳에서 받아 중복을 제거하고, 원하는 분류와 주기로 요약합니다. 승인된 개발 작업은 권한과 실행 상태를 기록한 채 코딩 에이전트로 넘깁니다. 뉴스레터 원문은 별도 크롤러(rapi-crawler, Go + Playwright)가 수집합니다.",
+        status: "v0.1.2 · 개인용으로 운영",
+        form: "Discord 봇 + 서버 · 오픈소스",
+      },
+      "justn-me": {
+        role: "웹에서 편집하고 공유하는 이력서·포트폴리오 편집기",
+        summary: "이력서와 포트폴리오를 칸 단위로 고쳐 PDF와 웹으로 내보내고, 회사별 사본을 공유합니다.",
+        description:
+          "이력서, 포트폴리오 덱, 자기소개서를 기준 문서로 두고 회사별 사본을 만들어 공유합니다. MCP 서버를 통해 에이전트가 같은 문서를 읽고 고칠 수 있고, 인쇄 규격에 맞춘 PDF로 내보냅니다.",
+        status: "운영 중 · justn.me",
+        form: "웹 앱 · 비공개 저장소",
+      },
+      sajurium: {
+        role: "사주를 데이터로 읽는 리포트 서비스",
+        summary: "생년월일시에서 명식을 계산하고 무료 리포트·관계·상담·이용권까지 하나의 웹 흐름으로 잇습니다.",
+        description:
+          "익명 세션으로 바로 시작해 명식 계산, 무료 리포트, 관계 분석, 상담 답변, 상품과 이용권 원장, 보관함을 실제 API로 읽고 씁니다. 결제·소셜 로그인·푸시는 스테이징에서 끝까지 만들어 두고, 운영 플래그는 기능별로 따로 켤 수 있게 꺼 두었습니다.",
+        status: "공개 프로토타입 운영 중",
+        form: "웹 앱 · 2인 팀 (백엔드 sasaju는 팀원 담당)",
+      },
+      bungae: {
+        role: "24시간 안에 만나는 소규모 모임",
+        summary: "18~39세 성인이 24시간 안에 공개 장소에서 안전하게 만나는 모바일 웹.",
+        description:
+          "탐색·내 모임·알림 3탭, 모임 생성, 참여와 대기, 인원 미달 결정, 채팅, 체크인, 피드백, 신고와 차단까지의 참가자 흐름을 만들었습니다. 세션 토큰은 메모리에만 두고, 서버가 주지 않는 값은 화면이 추정하지 않습니다.",
+        status: "개발 중",
+        form: "모바일 웹 · 2인 팀 (백엔드는 팀원 담당)",
+      },
+    } satisfies Record<ProductId, { role: string; summary: string; description: string; status: string; form: string }>,
+    demo: {
+      pipeline: { stages: ["수집", "정규화", "분류·요약", "전달"], sources: ["RSS", "GitHub", "웹훅"], outputs: ["Discord DM", "이메일", "블로그"] },
+      editor: { title: "resume/fe", fields: ["소개", "팀 프로젝트 경험", "기술"], copies: ["--토스", "--스캐터랩"], export: "PDF 내보내기" },
+      saju: { title: "명식", pillars: ["시", "일", "월", "년"], report: "무료 리포트", relation: "관계", consult: "상담" },
+      meetup: { title: "오늘 20:00 · 공개 장소", countdown: "마감까지", join: "참여", waitlist: "대기", checkin: "체크인", members: "3 / 4" },
+    },
+  },
+  approach: {
+    headline: "에이전트가 일을 한다고 해서\n사람이 진행을 잃어버릴 필요는 없습니다.",
+    body:
+      "저희는 무엇을 하고 있는지 볼 수 있고, 필요할 때 개입할 수 있고, 결과를 확인할 수 있는 도구를 만듭니다. 그래서 모든 제품에서 같은 질문을 반복합니다. 지금 무슨 일이 일어나고 있는가. 멈추거나 되돌릴 수 있는가. 결과를 어떻게 증명하는가. 화면에 보이는 상태는 실제 상태여야 하고, 자동화는 같은 일을 두 번 하지 않아야 합니다.",
+    principles: ["보이게", "개입할 수 있게", "확인할 수 있게"],
+  },
+  milestones: {
+    lede: "날짜는 GitHub 릴리스와 저장소의 기록에서 가져왔습니다. 저장소를 만든 날은 기록하지 않습니다.",
+    evidence: "근거",
+    items: {
+      "ap-3-3-0": { title: "agent-progress v3.3.0", body: "진행 창 재설계. 역할별 줄(막힘·지금·다음·완료), 그라데이션 채움, 세로 해상도 2배, 테마 설정." },
+      "brgr-2-13-4": { title: "brgr v2.13.4 · crates.io", body: "brgr-cli를 crates.io에 배포. 오래된 하네스 등록에 대한 안내와 headless 수정 작업 보완." },
+      "sajurium-flags": { title: "사주리움 운영 플래그 분리", body: "결제·소셜 로그인·푸시를 테스트 키로 끝까지 만들고, 운영 플래그 3개를 기능별로 따로 켜고 되돌릴 수 있게 나눴습니다." },
+      "rapi-0-1-0": { title: "라피 v0.1.0 첫 릴리스", body: "Discord 봇, 수집·요약·발송 흐름, 보존 정책의 첫 공개 버전. 같은 날 v0.1.2까지 데이터 삭제 요청 흐름 추가." },
+      "studio-start": { title: "스튜디오 시작", body: "justn.me 첫 커밋. 이후 6주 동안 여섯 제품의 첫 버전을 만들었습니다." },
+    } as Record<string, { title: string; body: string }>,
+  },
+  founder: {
+    name: "Hwang",
+    role: "Founder · Frontend & Product Engineer",
+    body:
+      "1인 인디 스타트업입니다. 사용자 흐름과 시스템 상태가 어긋나는 문제를 찾아 고치고, 복잡한 UI 상태부터 입력·검증·제출, 자동 저장과 실패 복구까지 하나의 제품 흐름으로 설계합니다. AI가 제안한 코드와 결과는 테스트와 실제 화면으로 확인한 뒤 반영합니다.",
+    stackLabel: "주로 쓰는 것",
+    stack: ["React", "Next.js", "TypeScript", "Rust (CLI)"],
+    ossLabel: "공개한 오픈소스",
+    oss: ["brgr", "agent-progress", "rapi-agent"],
+    links: { github: "GitHub", portfolio: "포트폴리오" },
+  },
+  contact: {
+    headline: "만들고 있는 것이 있다면\n이야기 나눠요.",
+    body: "제품 협업, 도구 도입, 작은 질문 모두 환영합니다. 메일로 보내 주시면 직접 읽고 답합니다.",
+    copy: "이메일 복사",
+    copied: "복사됨",
+    copyFailed: "복사 실패 · 직접 선택해 주세요",
+    mail: "메일 보내기",
+    github: "GitHub",
+  },
+  footer: {
+    rights: "© 2026 justn. All rights reserved.",
+    terms: "이용약관",
+    privacy: "개인정보처리방침",
+    language: "언어",
+    studio: "1인 소프트웨어 스튜디오 · 대한민국",
+  },
+  notFound: {
+    title: "페이지를 찾을 수 없습니다",
+    body: "주소가 바뀌었거나 없는 페이지입니다.",
+    home: "처음으로",
+  },
+  legal: {
+    updated: "최종 수정",
+    back: "처음으로",
+    terms: {
+      title: "이용약관",
+      intro: "이 약관은 justn(이하 \"스튜디오\")이 운영하는 웹사이트 company.justn.me(이하 \"사이트\")의 이용 조건을 정합니다. 사이트는 스튜디오와 제품을 소개하는 정보 제공 목적의 정적 웹사이트입니다.",
+      sections: [
+        { h: "1. 사이트의 성격", p: ["사이트는 회원가입, 로그인, 결제, 사용자 콘텐츠 업로드 기능을 제공하지 않습니다.", "사이트에서 소개하는 각 제품은 각자의 주소에서 별도로 운영되며, 해당 제품의 이용 조건은 각 제품에서 따로 안내합니다. 사주리움과 벙개는 2인 팀이 함께 만드는 제품입니다."] },
+        { h: "2. 지식재산권", p: ["사이트의 문구, 디자인, 이미지, 코드는 별도 표시가 없는 한 스튜디오에 권리가 있습니다.", "오픈소스로 공개된 제품은 각 저장소에 명시된 라이선스를 따릅니다."] },
+        { h: "3. 외부 링크", p: ["사이트는 GitHub 등 외부 사이트로 연결되는 링크를 포함합니다. 외부 사이트의 내용과 운영에 대해 스튜디오는 책임지지 않습니다."] },
+        { h: "4. 보증의 부인", p: ["사이트의 정보는 작성 시점을 기준으로 정확하게 유지하려고 노력하지만, 제품 상태와 릴리스 정보는 예고 없이 바뀔 수 있습니다."] },
+        { h: "5. 약관의 변경", p: ["약관을 바꾸면 이 페이지에 수정일을 표시합니다."] },
+        { h: "6. 문의", p: ["약관에 대한 문의는 ceo@justn.me로 보내 주세요."] },
+      ],
+    },
+    privacy: {
+      title: "개인정보처리방침",
+      intro: "justn(이하 \"스튜디오\")은 company.justn.me(이하 \"사이트\")에서 개인정보를 어떻게 다루는지 아래와 같이 안내합니다. 사이트는 정적 웹사이트이며, 방문자의 개인정보를 수집하는 양식이나 계정 기능이 없습니다.",
+      sections: [
+        { h: "1. 수집하는 정보", p: ["사이트는 방문자에게 이름, 이메일, 연락처 등 개인정보 입력을 요구하지 않습니다.", "분석 도구, 광고 식별자, 추적용 픽셀을 사용하지 않습니다."] },
+        { h: "2. 쿠키", p: ["사이트는 언어 선택을 기억하기 위한 기능성 쿠키 하나(NEXT_LOCALE)만 사용합니다. 이 쿠키는 \"ko\" 또는 \"en\" 값만 담으며, 방문자를 식별하지 않습니다. 브라우저 설정에서 삭제할 수 있습니다."] },
+        { h: "3. 이메일 문의", p: ["ceo@justn.me로 메일을 보내면 보낸 사람의 이메일 주소와 메일 내용이 답변을 위해 스튜디오의 메일함에 보관됩니다. 답변 외의 목적으로 쓰지 않으며, 삭제를 요청하면 지웁니다."] },
+        { h: "4. 호스팅", p: ["사이트는 호스팅 제공자의 인프라에서 제공됩니다. 호스팅 제공자는 서비스 제공과 보안을 위해 접속 로그(IP 주소, 요청 시각, 요청 경로 등)를 자체 정책에 따라 처리할 수 있습니다."] },
+        { h: "5. 외부 서비스", p: ["사이트에서 연결되는 GitHub 등 외부 사이트는 각자의 개인정보처리방침을 따릅니다."] },
+        { h: "6. 방침의 변경", p: ["방침을 바꾸면 이 페이지에 수정일을 표시합니다."] },
+        { h: "7. 문의", p: ["개인정보에 관한 문의는 ceo@justn.me로 보내 주세요."] },
+      ],
+    },
+  },
+};
+
+export type Dictionary = typeof ko;
