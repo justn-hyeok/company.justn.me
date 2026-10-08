@@ -1,6 +1,8 @@
 type LegalDetails = {
   registrationNumber?: string;
   address?: string;
+  /** English rendering of the address, used on /en. */
+  addressEn?: string;
   phone?: string;
 };
 
@@ -25,7 +27,8 @@ export const site = {
   // Publish these details only after they have been confirmed.
   legal: {
     registrationNumber: "",
-    address: "",
+    address: "경상남도 김해시",
+    addressEn: "Gimhae-si, Gyeongsangnam-do, Republic of Korea",
     phone: "",
   } as LegalDetails,
   copyrightYear: 2026,

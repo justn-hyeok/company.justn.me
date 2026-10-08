@@ -22,7 +22,7 @@ export function Company({ dict, locale }: { dict: Dictionary; locale: string }) 
     { label: company.labels.email, value: <a href={`mailto:${site.email}`} className={linkClass}>{site.email}</a> },
     { label: company.labels.location, value: company.location },
     ...(["address", "phone", "registrationNumber"] as const).flatMap((key) => {
-      const value = site.legal[key]?.trim();
+      const value = key === "address" && locale !== "ko" ? (site.legal.addressEn ?? site.legal.address)?.trim() : site.legal[key]?.trim();
       return value ? [{ label: company.labels[key], value }] : [];
     }),
     { label: company.labels.repositories, value: <a href={site.github} target="_blank" rel="noopener noreferrer" className={linkClass}>github.com/{site.githubHandle}</a> },

@@ -15,7 +15,7 @@ export function SiteFooter({ locale, dict }: { locale: Locale; dict: Dictionary 
     { label: company.labels.email, value: <a href={`mailto:${site.email}`} className="break-all underline underline-offset-4 hover:text-text">{site.email}</a> },
     { label: company.labels.location, value: company.location },
     ...(["registrationNumber", "address", "phone"] as const).flatMap((key) => {
-      const value = site.legal[key]?.trim();
+      const value = key === "address" && locale !== "ko" ? (site.legal.addressEn ?? site.legal.address)?.trim() : site.legal[key]?.trim();
       return value ? [{ label: company.labels[key], value }] : [];
     }),
   ];
