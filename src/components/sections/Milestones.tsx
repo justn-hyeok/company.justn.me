@@ -35,70 +35,51 @@ export function Milestones({ dict, locale }: { dict: Dictionary; locale: string 
     <section id="milestones" className="section scroll-mt-16 border-t border-border" aria-labelledby="milestones-title">
       <div className="container">
         <div className="grid-12 gap-y-10">
-          <div className="col-span-12 lg:col-span-4">
+          <div className="col-span-12 lg:col-span-8">
             <SectionHeading index={dict.sections.milestones.index} title={dict.sections.milestones.title} titleId="milestones-title" />
-            <p className="mt-5 max-w-[30ch] text-[14.5px] leading-relaxed text-text-2">{dict.milestones.lede}</p>
+            <p className="mt-5 max-w-[62ch] text-[14.5px] leading-relaxed text-text-2">{dict.milestones.lede}</p>
           </div>
 
-          <div ref={ref} className="relative col-span-12 lg:col-span-8">
-            <div className="absolute bottom-0 left-[7px] top-0 w-px bg-border" aria-hidden="true" />
-            <div data-progress className="absolute bottom-0 left-[7px] top-0 w-px origin-top bg-accent" aria-hidden="true" />
+          <div ref={ref} className="relative col-span-12 border-t border-border-strong">
+            <div data-progress className="pointer-events-none absolute bottom-0 left-0 top-0 w-px origin-top bg-accent-dim" aria-hidden="true" />
 
             <ol className="flex flex-col">
               {milestones.map((m) => {
                 const copy = dict.milestones.items[m.id];
                 const isActive = active === m.id;
-                const productName = m.product === "studio" ? "justn" : productById[m.product].name;
+                const productName = m.product === "studio" ? "Justn" : productById[m.product].name;
                 return (
-                  <li key={m.id} data-row>
+                  <li key={m.id} data-row data-active={isActive} className="ms-row" onMouseEnter={() => setActive(m.id)}>
                     <button
                       type="button"
                       onClick={() => setActive(m.id)}
                       onFocus={() => setActive(m.id)}
-                      onMouseEnter={() => setActive(m.id)}
                       aria-pressed={isActive}
-                      className="ms-row group grid w-full grid-cols-[16px_1fr] gap-x-4 py-4 text-left md:grid-cols-[16px_120px_1fr] md:gap-x-6"
+                      className="ms-entry w-full items-start text-left"
                     >
-                      <span className="relative mt-[7px] flex h-[15px] items-center justify-center" aria-hidden="true">
-                        <span
-                          className="ms-dot h-[9px] w-[9px] rounded-full border transition-colors"
-                          data-active={isActive}
-                          style={{
-                            transitionDuration: "var(--t-feedback)",
-                            background: isActive ? "var(--accent)" : "var(--bg)",
-                            borderColor: isActive ? "var(--accent)" : "var(--border-strong)",
-                          }}
-                        />
-                      </span>
-                      <span className={`mono text-[12.5px] tabular-nums transition-colors md:pt-[5px] ${isActive ? "text-accent" : "text-text-3"}`} style={{ transitionDuration: "var(--t-feedback)" }}>
+                      <span className={`mono text-[12.5px] leading-6 tabular-nums transition-colors ${isActive ? "text-accent" : "text-text-2"}`} style={{ transitionDuration: "var(--t-feedback)" }}>
                         <time dateTime={m.date}>{dateFmt.format(new Date(m.date))}</time>
                       </span>
-                      <span className="col-start-2 md:col-start-3">
-                        <span className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-                          <span className={`text-[17px] font-[540] tracking-[-0.01em] transition-colors ${isActive ? "text-text" : "text-text-2 group-hover:text-text"}`} style={{ transitionDuration: "var(--t-feedback)" }}>
-                            {copy.title}
-                          </span>
-                          <span className="mono text-[11px] text-text-3">{productName}</span>
+                      <span className="mono text-[12px] leading-6 text-text-2 [overflow-wrap:anywhere]">{productName}</span>
+                      <span className="min-w-0">
+                        <span className="block text-[16px] font-[540] leading-6 tracking-[-0.01em] text-text">
+                          {copy.title}
                         </span>
-                        <span
-                          className="mt-1 block max-w-[60ch] text-[14.5px] leading-relaxed text-text-2 transition-opacity"
-                          style={{ opacity: isActive ? 1 : 0.7, transitionDuration: "var(--t-feedback)" }}
-                        >
+                        <span className="mt-2 block max-w-[60ch] text-[14.5px] leading-[1.75] text-text-2">
                           {copy.body}
                         </span>
                       </span>
                     </button>
-                    <div className="grid grid-cols-[16px_1fr] gap-x-4 md:grid-cols-[16px_120px_1fr] md:gap-x-6">
-                      <a
-                        href={m.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={`col-start-2 mb-4 mono inline-flex w-fit items-center gap-1 text-[11.5px] transition-colors md:col-start-3 ${isActive ? "text-accent" : "text-text-3 hover:text-text-2"}`}
-                        style={{ transitionDuration: "var(--t-feedback)" }}
-                      >
-                        {dict.milestones.evidence} ↗ <span className="text-text-3">{m.href.replace(/^https:\/\/(www\.)?/, "")}</span>
-                      </a>
-                    </div>
+                    <a
+                      href={m.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onFocus={() => setActive(m.id)}
+                      className="ms-evidence mono block min-w-0 self-start text-[11.5px] leading-6 text-text-2 hover:text-accent"
+                      style={{ transitionDuration: "var(--t-feedback)" }}
+                    >
+                      <span className="text-accent">{dict.milestones.evidence} ↗</span> <span className="block">{m.href.replace(/^https:\/\/(www\.)?/, "")}</span>
+                    </a>
                   </li>
                 );
               })}

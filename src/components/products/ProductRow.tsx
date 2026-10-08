@@ -80,10 +80,17 @@ export function ProductRow({ id, dict, locale, flip = false, flagship = false }:
       </dl>
 
       <footer className="flex flex-wrap items-center gap-2">
-        <a href={facts.url} target="_blank" rel="noopener noreferrer" className="btn btn-primary !h-10 text-[14px]">
-          {d.visit}
-          <ExternalIcon />
-        </a>
+        {facts.live ? (
+          <a href={facts.url} target="_blank" rel="noopener noreferrer" className="btn btn-primary !h-10 text-[14px]">
+            {d.visit}
+            <ExternalIcon />
+          </a>
+        ) : (
+          <span className="chip !h-10 px-3 text-[12.5px]">
+            <span className="status-dot" aria-hidden="true" />
+            {d.pendingUrl}
+          </span>
+        )}
         {facts.install && (
           <a href={facts.install.url} target="_blank" rel="noopener noreferrer" className="btn btn-secondary !h-10 text-[14px]">
             {d.install} · {facts.install.label}
@@ -96,8 +103,6 @@ export function ProductRow({ id, dict, locale, flip = false, flagship = false }:
             <ExternalIcon />
           </a>
         )}
-        {!facts.live && facts.ownership === "cobuilt" && <span className="mono text-[11.5px] text-text-3">{d.pendingUrl}</span>}
-        {!facts.live && facts.id === "rapi" && <span className="mono text-[11.5px] text-text-3">{d.pendingUrl}</span>}
       </footer>
     </div>
   );

@@ -29,23 +29,23 @@ export function Philosophy({ dict }: { dict: Dictionary }) {
     <section id="approach" className="section scroll-mt-16 border-t border-border" aria-labelledby="approach-title">
       <div ref={ref} className="container">
         <Reveal className="grid-12 gap-y-10">
-          <p className="index col-span-12 lg:col-span-2">{sections.approach.index}</p>
-          <div className="col-span-12 lg:col-span-9 lg:col-start-3">
-            <h2 id="approach-title" className="h-statement pre-line max-w-[22ch] text-text">
+          <p className="index col-span-12 lg:col-span-4">{sections.approach.index}</p>
+          <div className="col-span-12 lg:col-span-8">
+            <h2 id="approach-title" className="h-statement pre-line max-w-[28ch] text-text">
               {approach.headline}
             </h2>
-            <p data-scrub className="mt-10 max-w-[62ch] text-[17px] leading-[1.75] text-text md:mt-14 md:text-[19px]">
+            <p data-scrub className="mt-8 max-w-[62ch] text-[17px] leading-[1.85] text-text">
               {words.map((w, i) => (
                 <span key={i} className="scrub-word">
                   {w}{" "}
                 </span>
               ))}
             </p>
-            <ol className="mt-12 flex flex-wrap gap-x-10 gap-y-3 border-t border-border pt-6 md:mt-16">
+            <ol className="mt-8 grid gap-4 border-t border-border pt-6 sm:grid-cols-3">
               {approach.principles.map((p, i) => (
                 <li key={p} className="group flex items-baseline gap-3">
-                  <span className="mono text-[12px] text-text-3 transition-colors group-hover:text-accent" style={{ transitionDuration: "var(--t-feedback)" }}>0{i + 1}</span>
-                  <span className="link-ul text-[16px] text-text">{p}</span>
+                  <span className="index">0{i + 1}</span>
+                  <span className="text-[16px] leading-relaxed text-text">{p}</span>
                 </li>
               ))}
             </ol>

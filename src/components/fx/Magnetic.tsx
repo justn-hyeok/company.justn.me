@@ -17,12 +17,12 @@ export function Magnetic({ children, strength = 0.18, className = "" }: { childr
     const dx = e.clientX - (r.left + r.width / 2);
     const dy = e.clientY - (r.top + r.height / 2);
     el.style.transform = `translate(${(dx * strength).toFixed(1)}px, ${(dy * strength).toFixed(1)}px)`;
-    el.style.transition = "transform 120ms linear";
+    el.style.transition = "transform 100ms linear";
   };
   const leave = () => {
     const el = ref.current;
     if (!el) return;
-    el.style.transition = "transform 420ms var(--ease-spring)";
+    el.style.transition = "transform 240ms var(--ease-out)";
     el.style.transform = "translate(0, 0)";
   };
 

@@ -26,9 +26,9 @@ export function NavLinks({ items }: NavLinksProps) {
   }, [items]);
 
   return (
-    <nav aria-label="primary" className="hidden md:flex items-center gap-1">
+    <nav aria-label="primary" className="ml-auto hidden items-center gap-1 md:flex">
       {items.map((item) => (
-        <a key={item.href} href={item.href} className="btn btn-ghost nav-link text-[14px]" data-active={active === item.id} aria-current={active === item.id ? "location" : undefined}>
+        <a key={item.href} href={item.href} className="btn btn-ghost nav-link !h-11 !text-[14px]" data-active={active === item.id} aria-current={active === item.id ? "location" : undefined}>
           {item.label}
         </a>
       ))}

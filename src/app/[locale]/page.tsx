@@ -12,6 +12,7 @@ import { ProductExplorer } from "@/components/products/ProductExplorer";
 import { Philosophy } from "@/components/sections/Philosophy";
 import { Milestones } from "@/components/sections/Milestones";
 import { Founder } from "@/components/sections/Founder";
+import { Company } from "@/components/sections/Company";
 import { Contact } from "@/components/sections/Contact";
 
 export default async function LandingPage({ params }: { params: Promise<{ locale: string }> }) {
@@ -29,9 +30,9 @@ export default async function LandingPage({ params }: { params: Promise<{ locale
       url: site.url,
       email: site.email,
       description: dict.meta.description,
-      foundingDate: "2026",
+      foundingDate: site.foundedDate,
       numberOfEmployees: { "@type": "QuantitativeValue", value: 1 },
-      founder: { "@type": "Person", name: site.founder.name, url: site.founder.portfolio, sameAs: [site.founder.github] },
+      founder: { "@type": "Person", name: site.founder.latinName, alternateName: site.founder.name, url: site.founder.portfolio, sameAs: [site.founder.github] },
       sameAs: [site.github],
     },
     ...ownProducts.map((p) => ({
@@ -74,6 +75,7 @@ export default async function LandingPage({ params }: { params: Promise<{ locale
         <Philosophy dict={dict} />
         <Milestones dict={dict} locale={locale} />
         <Founder dict={dict} />
+        <Company dict={dict} locale={locale} />
         <Contact dict={dict} />
       </main>
       <SiteFooter locale={locale} dict={dict} />

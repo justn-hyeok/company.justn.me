@@ -14,19 +14,19 @@ export function Founder({ dict }: { dict: Dictionary }) {
           <div className="col-span-12 lg:col-span-4">
             <SectionHeading index={dict.sections.founder.index} title={dict.sections.founder.title} titleId="founder-title" />
           </div>
-          <div className="col-span-12 lg:col-span-7 lg:col-start-6">
-            <div className="flex flex-col gap-6 border-l border-border pl-5 md:pl-8">
+          <div className="col-span-12 lg:col-span-8">
+            <div className="flex flex-col gap-6 border-t border-border-strong pt-6">
               <div>
-                <p className="text-[24px] font-[560] leading-none tracking-[-0.02em] text-text">{founder.name}</p>
+                <p className="text-[24px] font-[560] leading-snug tracking-[-0.02em] text-text">{founder.name}</p>
                 <p className="mono mt-2 text-[12.5px] text-text-2">{founder.role}</p>
               </div>
               <p className="max-w-[58ch] text-[16px] leading-[1.75] text-text-2">{founder.body}</p>
-              <dl className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+              <dl className="grid grid-cols-1 gap-6 border-y border-border py-6 sm:grid-cols-2">
                 <div>
                   <dt className="index mb-2">{founder.stackLabel}</dt>
                   <dd className="flex flex-wrap gap-1.5">
                     {founder.stack.map((s) => (
-                      <span key={s} className="chip">{s}</span>
+                      <span key={s} className="text-[14px] text-text-2 not-last:after:mx-2 not-last:after:content-['·']">{s}</span>
                     ))}
                   </dd>
                 </div>
@@ -34,13 +34,23 @@ export function Founder({ dict }: { dict: Dictionary }) {
                   <dt className="index mb-2">{founder.ossLabel}</dt>
                   <dd className="flex flex-wrap gap-1.5">
                     {founder.oss.map((s) => (
-                      <a key={s} href={`${site.github}/${s}`} target="_blank" rel="noopener noreferrer" className="chip hover:border-accent hover:text-accent transition-colors">
+                      <a key={s} href={`${site.github}/${s}`} target="_blank" rel="noopener noreferrer" className="link-ul mr-3 text-[14px] text-text-2">
                         {s} ↗
                       </a>
                     ))}
                   </dd>
                 </div>
               </dl>
+              <div>
+                <p className="index mb-2">{founder.contribLabel}</p>
+                <ul className="m-0 list-none p-0 text-[14.5px] leading-relaxed text-text-2">
+                  {founder.contrib.map((c) => (
+                    <li key={c.href}>
+                      <a href={c.href} target="_blank" rel="noopener noreferrer" className="link-ul">{c.text} ↗</a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
               <div className="flex flex-wrap gap-2">
                 <a href={site.founder.github} target="_blank" rel="noopener noreferrer" className="btn btn-secondary !h-10 text-[14px]">
                   {founder.links.github} · {site.githubHandle}

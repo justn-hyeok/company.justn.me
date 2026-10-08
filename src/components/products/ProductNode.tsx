@@ -1,6 +1,7 @@
 "use client";
 
 import { Handle, Position, type Node, type NodeProps } from "@xyflow/react";
+import { useState } from "react";
 import type { ProductId } from "@/content/products";
 import { Symbol } from "@/components/brand/Wordmark";
 
@@ -35,6 +36,10 @@ export const STUDIO_H = 58;
 /** A node is a jump link: name, Latin name, status. Nothing to truncate. */
 export function ProductNode({ data }: NodeProps<ProductFlowNode>) {
   const { name, latinName, status, live, cobuilt, active, entered, delay, onSelect, id } = data;
+  // The entrance keyframe fills forwards and would override the hover lift,
+  // so its class is removed once it has played.
+  const [settled, setSettled] = useState(false);
+  const enterClass = !entered ? "opacity-0" : settled ? "" : "rf-node-enter";
   return (
     <>
       <Handle type="target" position={Position.Left} isConnectable={false} />
@@ -43,8 +48,9 @@ export function ProductNode({ data }: NodeProps<ProductFlowNode>) {
       <Handle type="target" position={Position.Bottom} id="in-bottom" isConnectable={false} />
       <button
         type="button"
-        className={`product-node nodrag nopan ${entered ? "rf-node-enter" : "opacity-0"}`}
+        className={`product-node nodrag nopan ${enterClass}`}
         style={{ width: NODE_W, height: NODE_H, ["--enter-delay" as string]: `${delay}ms` }}
+        onAnimationEnd={() => setSettled(true)}
         aria-current={active ? "true" : undefined}
         data-active={active}
         data-cobuilt={cobuilt}

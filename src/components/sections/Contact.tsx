@@ -47,7 +47,18 @@ export function Contact({ dict }: { dict: Dictionary }) {
           <h2 id="contact-title" className="h-statement pre-line col-span-12 max-w-[20ch] text-text lg:col-span-7">
             {dict.contact.headline}
           </h2>
-          <p className="col-span-12 max-w-[46ch] text-[16px] leading-[1.7] text-text-2 lg:col-span-4 lg:col-start-9 lg:self-end">{dict.contact.body}</p>
+          <div className="col-span-12 flex flex-col gap-4 lg:col-span-4 lg:col-start-9 lg:self-end">
+            <p className="max-w-[46ch] text-[16px] leading-[1.7] text-text-2">{dict.contact.body}</p>
+            <div>
+              <p className="index mb-2">{dict.contact.inquiriesLabel}</p>
+              <ul className="m-0 flex flex-wrap gap-x-4 gap-y-1 list-none p-0 text-[14px] text-text-2">
+                {dict.contact.inquiries.map((i) => (
+                  <li key={i}>{i}</li>
+                ))}
+              </ul>
+              <p className="mono mt-2 text-[12px] text-text-3">{dict.contact.responseTime}</p>
+            </div>
+          </div>
 
           <div className="col-span-12 mt-4 flex flex-col gap-5 border-t border-border pt-8">
             <a
@@ -87,6 +98,14 @@ export function Contact({ dict }: { dict: Dictionary }) {
                 {dict.contact.github} · {site.githubHandle} ↗
               </a>
             </div>
+          </div>
+
+          <div className="col-span-12 grid gap-3 border-t border-border pt-6 lg:col-span-8">
+            <p className="index">{dict.contact.policyTitle}</p>
+            <p className="max-w-[62ch] text-[14.5px] leading-relaxed text-text-2">{dict.contact.policyBody}</p>
+            <a href={`mailto:${site.email}?subject=${encodeURIComponent(dict.contact.securityLabel)}`} className="link-ul mono w-fit text-[13px] text-text-2">
+              {dict.contact.securityLabel} · {site.email}
+            </a>
           </div>
         </div>
       </div>

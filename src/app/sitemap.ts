@@ -3,7 +3,7 @@ import { locales } from "@/i18n/config";
 import { site } from "@/content/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const paths = ["", "/terms", "/privacy"];
+  const paths = ["", "/changelog", "/terms", "/privacy"];
   const lastModified = new Date(site.legalUpdated);
   return paths.flatMap((path) =>
     locales.map((locale) => ({

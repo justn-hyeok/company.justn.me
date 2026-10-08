@@ -1,0 +1,583 @@
+[
+  {
+    "product": "agent-progress",
+    "tag": "v3.4.0",
+    "date": "2026-10-08",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/agent-progress/releases/tag/v3.4.0"
+  },
+  {
+    "product": "agent-progress",
+    "tag": "v3.3.1",
+    "date": "2026-10-08",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/agent-progress/releases/tag/v3.3.1"
+  },
+  {
+    "product": "agent-progress",
+    "tag": "v3.3.0",
+    "date": "2026-10-08",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/agent-progress/releases/tag/v3.3.0"
+  },
+  {
+    "product": "agent-progress",
+    "tag": "v3.2.0",
+    "date": "2026-10-08",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/agent-progress/releases/tag/v3.2.0"
+  },
+  {
+    "product": "agent-progress",
+    "tag": "v3.1.0",
+    "date": "2026-10-06",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/agent-progress/releases/tag/v3.1.0"
+  },
+  {
+    "product": "agent-progress",
+    "tag": "v3.0.0-beta.2",
+    "date": "2026-10-06",
+    "prerelease": true,
+    "url": "https://github.com/justn-hyeok/agent-progress/releases/tag/v3.0.0-beta.2"
+  },
+  {
+    "product": "agent-progress",
+    "tag": "v3.0.0-beta.1",
+    "date": "2026-10-06",
+    "prerelease": true,
+    "url": "https://github.com/justn-hyeok/agent-progress/releases/tag/v3.0.0-beta.1"
+  },
+  {
+    "product": "agent-progress",
+    "tag": "v3.0.0-alpha.2",
+    "date": "2026-10-06",
+    "prerelease": true,
+    "url": "https://github.com/justn-hyeok/agent-progress/releases/tag/v3.0.0-alpha.2"
+  },
+  {
+    "product": "agent-progress",
+    "tag": "v3.0.0-alpha.1",
+    "date": "2026-10-06",
+    "prerelease": true,
+    "url": "https://github.com/justn-hyeok/agent-progress/releases/tag/v3.0.0-alpha.1"
+  },
+  {
+    "product": "agent-progress",
+    "tag": "v3.0.0",
+    "date": "2026-10-06",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/agent-progress/releases/tag/v3.0.0"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.13.4",
+    "date": "2026-10-06",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.13.4"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.13.3",
+    "date": "2026-10-06",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.13.3"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.13.2",
+    "date": "2026-10-06",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.13.2"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.13.1",
+    "date": "2026-10-06",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.13.1"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.13.0",
+    "date": "2026-10-06",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.13.0"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.12.16",
+    "date": "2026-10-06",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.12.16"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.9.3",
+    "date": "2026-10-05",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.9.3"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.9.2",
+    "date": "2026-10-05",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.9.2"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.9.1",
+    "date": "2026-10-05",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.9.1"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.9.0",
+    "date": "2026-10-05",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.9.0"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.8.0",
+    "date": "2026-10-05",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.8.0"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.7.1",
+    "date": "2026-10-05",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.7.1"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.7.0",
+    "date": "2026-10-05",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.7.0"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.6.1",
+    "date": "2026-10-05",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.6.1"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.6.0",
+    "date": "2026-10-05",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.6.0"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.12.9",
+    "date": "2026-10-05",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.12.9"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.12.8",
+    "date": "2026-10-05",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.12.8"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.12.7",
+    "date": "2026-10-05",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.12.7"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.12.6",
+    "date": "2026-10-05",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.12.6"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.12.5",
+    "date": "2026-10-05",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.12.5"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.12.4",
+    "date": "2026-10-05",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.12.4"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.12.3",
+    "date": "2026-10-05",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.12.3"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.12.2",
+    "date": "2026-10-05",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.12.2"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.12.15",
+    "date": "2026-10-05",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.12.15"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.12.14",
+    "date": "2026-10-05",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.12.14"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.12.13",
+    "date": "2026-10-05",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.12.13"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.12.12",
+    "date": "2026-10-05",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.12.12"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.12.11",
+    "date": "2026-10-05",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.12.11"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.12.10",
+    "date": "2026-10-05",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.12.10"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.12.1",
+    "date": "2026-10-05",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.12.1"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.12.0",
+    "date": "2026-10-05",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.12.0"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.11.0",
+    "date": "2026-10-05",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.11.0"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.10.6",
+    "date": "2026-10-05",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.10.6"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.10.5",
+    "date": "2026-10-05",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.10.5"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.10.4",
+    "date": "2026-10-05",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.10.4"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.10.3",
+    "date": "2026-10-05",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.10.3"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.10.2",
+    "date": "2026-10-05",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.10.2"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.10.1",
+    "date": "2026-10-05",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.10.1"
+  },
+  {
+    "product": "agent-progress",
+    "tag": "v1.2.8",
+    "date": "2026-10-01",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/agent-progress/releases/tag/v1.2.8"
+  },
+  {
+    "product": "agent-progress",
+    "tag": "v1.2.7",
+    "date": "2026-10-01",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/agent-progress/releases/tag/v1.2.7"
+  },
+  {
+    "product": "agent-progress",
+    "tag": "v1.2.6",
+    "date": "2026-09-30",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/agent-progress/releases/tag/v1.2.6"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.5.0",
+    "date": "2026-09-29",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.5.0"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.4.0",
+    "date": "2026-09-29",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.4.0"
+  },
+  {
+    "product": "agent-progress",
+    "tag": "v1.2.5",
+    "date": "2026-09-29",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/agent-progress/releases/tag/v1.2.5"
+  },
+  {
+    "product": "agent-progress",
+    "tag": "v1.2.4",
+    "date": "2026-09-29",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/agent-progress/releases/tag/v1.2.4"
+  },
+  {
+    "product": "agent-progress",
+    "tag": "v1.2.3",
+    "date": "2026-09-29",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/agent-progress/releases/tag/v1.2.3"
+  },
+  {
+    "product": "agent-progress",
+    "tag": "v1.2.2",
+    "date": "2026-09-29",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/agent-progress/releases/tag/v1.2.2"
+  },
+  {
+    "product": "agent-progress",
+    "tag": "v1.2.1",
+    "date": "2026-09-29",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/agent-progress/releases/tag/v1.2.1"
+  },
+  {
+    "product": "agent-progress",
+    "tag": "v1.2.0",
+    "date": "2026-09-29",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/agent-progress/releases/tag/v1.2.0"
+  },
+  {
+    "product": "agent-progress",
+    "tag": "v1.1.1",
+    "date": "2026-09-29",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/agent-progress/releases/tag/v1.1.1"
+  },
+  {
+    "product": "agent-progress",
+    "tag": "v1.1.0",
+    "date": "2026-09-28",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/agent-progress/releases/tag/v1.1.0"
+  },
+  {
+    "product": "rapi",
+    "tag": "v0.1.2",
+    "date": "2026-09-28",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/rapi-agent/releases/tag/v0.1.2"
+  },
+  {
+    "product": "rapi",
+    "tag": "v0.1.1",
+    "date": "2026-09-28",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/rapi-agent/releases/tag/v0.1.1"
+  },
+  {
+    "product": "rapi",
+    "tag": "v0.1.0",
+    "date": "2026-09-28",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/rapi-agent/releases/tag/v0.1.0"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.3.1",
+    "date": "2026-09-25",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.3.1"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.3.0",
+    "date": "2026-09-24",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.3.0"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.2.2",
+    "date": "2026-09-24",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.2.2"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.2.1",
+    "date": "2026-09-23",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.2.1"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.2.0",
+    "date": "2026-09-23",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.2.0"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.1.0",
+    "date": "2026-09-22",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.1.0"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.0.2",
+    "date": "2026-09-15",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.0.2"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.0.1",
+    "date": "2026-09-15",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.0.1"
+  },
+  {
+    "product": "brgr",
+    "tag": "v2.0.0",
+    "date": "2026-09-14",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v2.0.0"
+  },
+  {
+    "product": "brgr",
+    "tag": "v1.0.9",
+    "date": "2026-09-14",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v1.0.9"
+  },
+  {
+    "product": "brgr",
+    "tag": "v1.0.8",
+    "date": "2026-09-14",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v1.0.8"
+  },
+  {
+    "product": "brgr",
+    "tag": "v1.0.7",
+    "date": "2026-09-14",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v1.0.7"
+  },
+  {
+    "product": "brgr",
+    "tag": "v1.0.6",
+    "date": "2026-09-14",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v1.0.6"
+  },
+  {
+    "product": "brgr",
+    "tag": "v1.0.5",
+    "date": "2026-09-14",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v1.0.5"
+  },
+  {
+    "product": "brgr",
+    "tag": "v1.0.4",
+    "date": "2026-09-14",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v1.0.4"
+  },
+  {
+    "product": "brgr",
+    "tag": "v1.0.3",
+    "date": "2026-09-14",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v1.0.3"
+  },
+  {
+    "product": "brgr",
+    "tag": "v1.0.2",
+    "date": "2026-09-14",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v1.0.2"
+  },
+  {
+    "product": "brgr",
+    "tag": "v1.0.1",
+    "date": "2026-09-14",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v1.0.1"
+  },
+  {
+    "product": "brgr",
+    "tag": "v1.0.0",
+    "date": "2026-09-14",
+    "prerelease": false,
+    "url": "https://github.com/justn-hyeok/brgr/releases/tag/v1.0.0"
+  }
+]

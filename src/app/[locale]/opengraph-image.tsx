@@ -3,7 +3,7 @@ import { isLocale, locales } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { products } from "@/content/products";
 
-export const alt = "justn — independent software studio";
+export const alt = "Justn — independent software studio";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -23,7 +23,7 @@ async function loadGoogleFont(family: string, weight: number, text: string) {
 export default async function Image({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const dict = getDictionary(isLocale(locale) ? locale : "ko");
-  const title = "justn";
+  const title = "Justn";
   const label = "INDEPENDENT SOFTWARE STUDIO";
   const desc = dict.meta.ogDescription;
 

@@ -1,5 +1,11 @@
+type LegalDetails = {
+  registrationNumber?: string;
+  address?: string;
+  phone?: string;
+};
+
 export const site = {
-  name: "justn",
+  name: "Justn",
   domain: "company.justn.me",
   url: "https://company.justn.me",
   email: "ceo@justn.me",
@@ -7,10 +13,21 @@ export const site = {
   githubHandle: "justn-hyeok",
   portfolio: "https://justn.me",
   founder: {
-    name: "Hwang",
+    name: "황준혁",
+    latinName: "Junhyeok Hwang",
     github: "https://github.com/justn-hyeok",
     portfolio: "https://justn.me",
   },
+  foundedYear: 2026,
+  foundedDate: "2026-05-31",
+  /** Business days promised for a first reply to email. */
+  responseDays: 2,
+  // Publish these details only after they have been confirmed.
+  legal: {
+    registrationNumber: "",
+    address: "",
+    phone: "",
+  } as LegalDetails,
   copyrightYear: 2026,
   legalUpdated: "2026-10-08",
 } as const;

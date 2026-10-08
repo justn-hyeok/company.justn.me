@@ -1,3 +1,20 @@
+import releasesJson from "./releases.json";
+
+export interface Release {
+  product: string;
+  tag: string;
+  date: string;
+  prerelease: boolean;
+  url: string;
+}
+/** GitHub release history of the open-source products, newest first.
+ *  Snapshot taken with `gh release list` on 2026-10-08. */
+export const releases: Release[] = releasesJson as Release[];
+function latest(product: string) {
+  const r = releases.find((x) => x.product === product && !x.prerelease);
+  return r ? { tag: r.tag, date: r.date, url: r.url } : undefined;
+}
+
 export type ProductId =
   | "brgr"
   | "agent-progress"
@@ -38,7 +55,7 @@ export const products: ProductFacts[] = [
     url: "https://github.com/justn-hyeok/brgr",
     install: { label: "crates.io · brgr-cli", url: "https://crates.io/crates/brgr-cli" },
     repo: "https://github.com/justn-hyeok/brgr",
-    release: { tag: "v2.13.4", date: "2026-10-06", url: "https://github.com/justn-hyeok/brgr/releases/tag/v2.13.4" },
+    release: latest("brgr"),
     since: "2026-09-13",
     stack: ["Rust", "Herdr", "MIT"],
     recording: { src: "/media/brgr.mp4", width: 1200, height: 674, startAt: 11 },
@@ -51,7 +68,7 @@ export const products: ProductFacts[] = [
     url: "https://github.com/justn-hyeok/agent-progress",
     install: { label: "Homebrew tap", url: "https://github.com/justn-hyeok/agent-progress#설치" },
     repo: "https://github.com/justn-hyeok/agent-progress",
-    release: { tag: "v3.3.0", date: "2026-10-08", url: "https://github.com/justn-hyeok/agent-progress/releases/tag/v3.3.0" },
+    release: latest("agent-progress"),
     since: "2026-09-28",
     stack: ["Rust", "Homebrew", "Herdr / tmux"],
     recording: { src: "/media/agent-progress.mp4", width: 1500, height: 214 },
@@ -64,7 +81,7 @@ export const products: ProductFacts[] = [
     ownership: "own",
     url: "https://rapi.justn.me",
     repo: "https://github.com/justn-hyeok/rapi-agent",
-    release: { tag: "v0.1.2", date: "2026-09-28", url: "https://github.com/justn-hyeok/rapi-agent/releases/tag/v0.1.2" },
+    release: latest("rapi"),
     since: "2026-09-06",
     stack: ["Node.js", "PostgreSQL", "Discord bot", "Go crawler"],
     live: false,

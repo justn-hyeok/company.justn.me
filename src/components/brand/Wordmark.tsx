@@ -33,7 +33,7 @@ export function Wordmark({ className = "", size = 20, withSymbol = true }: Wordm
         className="font-sans tracking-[-0.04em]"
         style={{ fontSize: size * 0.95, fontWeight: 600, transform: "translateY(-0.5px)" }}
       >
-        justn
+        Justn
       </span>
     </span>
   );

@@ -23,7 +23,7 @@ export function SiteHeader({ locale, dict, nav = true }: SiteHeaderProps) {
   ];
 
   return (
-    <header className="sticky top-0 z-40 border-b border-border bg-bg">
+    <header className="sticky top-0 z-40 border-t border-t-border-strong border-b border-b-border bg-bg">
       <ScrollProgress />
       <a
         href="#main"
@@ -31,18 +31,18 @@ export function SiteHeader({ locale, dict, nav = true }: SiteHeaderProps) {
       >
         {dict.nav.skip}
       </a>
-      <div className="container flex h-16 items-center justify-between gap-4">
-        <Link href={base} className="flex items-center" aria-label="justn">
+      <div className="container flex h-18 items-center justify-between gap-3 lg:gap-8">
+        <Link href={base} className="flex h-11 shrink-0 items-center" aria-label="Justn">
           <Wordmark size={22} />
         </Link>
 
         {nav && <NavLinks items={items} />}
 
-        <div className="flex items-center gap-1">
-          <LocaleSwitch locale={locale} label={dict.nav.langSwitch} ariaLabel={dict.nav.langSwitchAria} />
-          <a href={`${base}#contact`} className="btn btn-primary !h-10 px-4 text-[14px]">
-            <span className="md:hidden">{dict.nav.ctaShort}</span>
-            <span className="hidden md:inline">{dict.nav.cta}</span>
+        <div className="ml-auto flex shrink-0 items-center gap-2 lg:ml-0 lg:gap-4 lg:border-l lg:border-border lg:pl-6">
+          <LocaleSwitch locale={locale} label={dict.nav.langSwitch} ariaLabel={dict.nav.langSwitchAria} className="!h-11 !gap-1 !px-2" />
+          <a href={`${base}#contact`} className="btn btn-primary !h-11 !px-4 !text-[14px]">
+            <span className="lg:hidden">{dict.nav.ctaShort}</span>
+            <span className="hidden lg:inline">{dict.nav.cta}</span>
           </a>
         </div>
       </div>

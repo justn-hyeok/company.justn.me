@@ -2,9 +2,9 @@ import type { Dictionary } from "./ko";
 
 export const en: Dictionary = {
   meta: {
-    title: "justn — a one-person software studio building coding-agent tools",
+    title: "Justn — a one-person software studio building coding-agent tools",
     description:
-      "justn is a one-person software studio that builds and runs brgr, a coding-agent orchestrator, agent-progress, a terminal progress pane, and Rapi, a personal agent. Sajurium and Bungae are built with a two-person team.",
+      "Justn is a one-person software studio. We develop and operate brgr, a coding-agent orchestrator, agent-progress, a terminal progress pane, and Rapi, a personal agent. We co-develop Sajurium and Bungae as part of a two-person team.",
     ogDescription: "Tools that run coding agents in parallel, show their progress, and verify the result.",
   },
   nav: {
@@ -21,9 +21,9 @@ export const en: Dictionary = {
   },
   hero: {
     label: "INDEPENDENT SOFTWARE STUDIO",
-    title: "justn",
+    title: "Justn",
     description: "We build brgr, which runs coding agents in parallel,\nagent-progress, a progress pane for agents,\nand Rapi, a personal agent.",
-    support: "A one-person software studio. The focus is letting people see, stop and verify while agents do the work.",
+    support: "We are a one-person software studio. We develop tools that enable people to monitor and stop agent work, and verify its results.",
     primary: "See brgr",
     secondary: "Start a conversation",
     evidence: {
@@ -33,20 +33,21 @@ export const en: Dictionary = {
     },
   },
   sections: {
-    products: { index: "01 / PRODUCTS", title: "Products", lede: "Four are built and run by justn.\nTwo are built with a two-person team, where justn owns planning, design and frontend." },
+    products: { index: "01 / PRODUCTS", title: "Products", lede: "We develop and operate four products directly.\nWe co-develop two products as part of a two-person team, responsible for planning, design and frontend development." },
     approach: { index: "02 / APPROACH", title: "Approach" },
     milestones: { index: "03 / MILESTONES", title: "Milestones" },
     founder: { index: "04 / FOUNDER", title: "Founder" },
-    contact: { index: "05 / CONTACT", title: "Contact" },
+    company: { index: "05 / COMPANY", title: "Company overview", lede: "We are a one-person software studio based in South Korea, developing coding-agent tools, personal agents and web products." },
+    contact: { index: "06 / CONTACT", title: "Contact" },
   },
   products: {
-    groups: { own: "Built by justn", cobuilt: "Built with a team" },
-    cobuiltNote: "Two-person team · justn: planning, design, frontend",
+    groups: { own: "Built by Justn", cobuilt: "Built with a team" },
+    cobuiltNote: "Two-person team · Justn: planning, design, frontend",
     flagship: "Flagship",
-    studioNode: { title: "justn", subtitle: "studio" },
-    mapAria: "Product map. Lines run from the studio to each product. Solid lines are products justn builds and runs; dashed lines are products built with a two-person team. Pressing a node jumps to that product's description.",
+    studioNode: { title: "Justn", subtitle: "studio" },
+    mapAria: "Product map. Lines run from the studio to each product. Solid lines are products Justn builds and runs; dashed lines are products built with a two-person team. Pressing a node jumps to that product's description.",
     mapHint: "Press a node to jump to its description",
-    legend: { own: "built and run by justn", cobuilt: "built with a two-person team" },
+    legend: { own: "built and run by Justn", cobuilt: "built with a two-person team" },
     listAria: "Jump to a product",
     detail: {
       status: "Status",
@@ -60,7 +61,7 @@ export const en: Dictionary = {
       demoNote: "Illustrative demo. Not real data or live state.",
       recordingLabel: "Real TUI recording",
       recordingNote: "Taken as-is from the repository docs.",
-      pendingUrl: "Domain not live yet",
+      pendingUrl: "Private testing · external access restricted",
     },
     items: {
       brgr: {
@@ -68,7 +69,7 @@ export const en: Dictionary = {
         summary: "When Codex or Claude Code hands work to other coding agents, brgr opens the workers and returns each result as a sealed report.",
         description:
           "Each worker opens in its own Herdr pane, and brgr clicks through the trust and continue prompts for it. Results come back to the owner agent as sealed reports, and a diff is applied only after an explicit accept. Failures are repeated until acknowledged. Twelve harnesses can be workers: Claude Code, Codex CLI, Gemini CLI, GitHub Copilot CLI, Pi, OpenCode, Cursor CLI, Devin CLI, Cline, GJC, OMP and Command Code.",
-        status: "v2.13.4 · on crates.io",
+        status: "On crates.io",
         form: "Rust CLI · macOS Apple Silicon · Herdr 0.9+ · MIT",
       },
       "agent-progress": {
@@ -76,7 +77,7 @@ export const en: Dictionary = {
         summary: "When a coding agent writes its plan with the ap command, a progress pane opens right under it. The user registers nothing.",
         description:
           "Reads the plan recorded with ap goal, ap add, ap start and ap done, and shows the goal, progress, what is happening now, what is blocked and why, and what comes next. Install with Homebrew, then run ap skill install once so agents use it on their own.",
-        status: "v3.3.0 · Homebrew",
+        status: "On Homebrew",
         form: "Rust CLI · macOS Apple Silicon · open source",
       },
       rapi: {
@@ -84,7 +85,7 @@ export const en: Dictionary = {
         summary: "Gathers changes from RSS, GitHub and webhooks, classifies and summarises them, and sends Discord DMs and an email newsletter.",
         description:
           "Receives changes from many sources in one place, removes duplicates, and summarises them on the schedule and categories you choose. Approved development tasks are handed to a coding agent with their permissions and execution state recorded. A separate crawler (rapi-crawler, Go + Playwright) collects newsletter sources.",
-        status: "v0.1.2 · running for personal use",
+        status: "Private operation",
         form: "Discord bot + server · open source",
       },
       "justn-me": {
@@ -108,7 +109,7 @@ export const en: Dictionary = {
         summary: "A mobile web app for adults aged 18 to 39 to meet safely in public places within 24 hours.",
         description:
           "Built the participant flow: three tabs for browsing, my meetups and notifications, meetup creation, join and waitlist, the under-capacity decision, chat, check-in, feedback, reporting and blocking. Session tokens live only in memory, and the UI never guesses values the server has not sent.",
-        status: "In development",
+        status: "Private testing",
         form: "Mobile web · two-person team (backend by a teammate)",
       },
     },
@@ -133,35 +134,75 @@ export const en: Dictionary = {
       "brgr-2-13-4": { title: "brgr v2.13.4 · crates.io", body: "brgr-cli published on crates.io. Adds a notice for stale harness registrations and fixes revisions of headless runs." },
       "sajurium-flags": { title: "Sajurium production flags split", body: "Payments, social login and push built end to end with test keys, with three production flags that can be switched on and rolled back one feature at a time." },
       "rapi-0-1-0": { title: "Rapi v0.1.0, first release", body: "First public version of the Discord bot, the collect, summarise and deliver flow, and retention policy. v0.1.2 the same day added the data deletion request flow." },
-      "studio-start": { title: "Studio started", body: "First commit of justn.me. The first versions of six products followed over the next six weeks." },
+      "studio-start": { title: "justn.me, first commit", body: "First commit of the first product. The first versions of six products followed over the next six weeks." },
     },
   },
   founder: {
-    name: "Hwang",
-    role: "Founder · Frontend & Product Engineer",
+    name: "Junhyeok Hwang",
+    role: "Representative · Founder · Frontend & Product Engineer",
     body:
       "A one-person indie startup. I find and fix the places where user flows and system state drift apart, and design complex UI state, input, validation, submission, autosave and failure recovery as one product flow. Code and results suggested by AI are checked with tests and real screens before they ship.",
     stackLabel: "Mostly working in",
     stack: ["React", "Next.js", "TypeScript", "Rust (CLI)"],
     ossLabel: "Open source published",
     oss: ["brgr", "agent-progress", "rapi-agent"],
+    contribLabel: "Verified external contribution",
+    contrib: [{ text: "React Flow · fix for SmoothStep edge curvature, PR #5730 merged (@xyflow/system 0.0.76)", href: "https://github.com/xyflow/xyflow/pull/5730" }],
     links: { github: "GitHub", portfolio: "Portfolio" },
   },
   contact: {
     headline: "If you are building something,\nlet's talk.",
     body: "Product collaboration, adopting a tool, or a small question are all welcome. Email is read and answered directly.",
+    inquiriesLabel: "Inquiries we take",
+    inquiries: ["Collaboration proposals", "Tool adoption · technical questions", "Co-development", "Hiring · interview requests"],
+    responseTime: "We reply within two business days.",
+    policyTitle: "Open source · security",
+    policyBody: "Developer tools are published under the licence stated in each repository (brgr: MIT), and issues and pull requests are welcome. Please report security vulnerabilities privately to the address below rather than in a public issue.",
+    securityLabel: "Security reports",
     copy: "Copy email",
     copied: "Copied",
     copyFailed: "Copy failed · select it manually",
     mail: "Send email",
     github: "GitHub",
   },
+  company: {
+    foundedFormat: "date",
+    labels: {
+      name: "Legal entity",
+      type: "Entity type",
+      founded: "Established",
+      model: "Business model",
+      representative: "Representative",
+      business: "Business areas",
+      email: "Contact",
+      location: "Registered in",
+      repositories: "Public repositories",
+      registrationNumber: "Business registration number",
+      address: "Address",
+      phone: "Phone",
+    },
+    type: "One-person software studio",
+    location: "South Korea",
+    business: "Coding-agent tools brgr and agent-progress, Rapi personal agent, web products",
+    model: "Developer tools are published as open source; consumer products will offer paid features after general release.",
+  },
+  changelog: {
+    title: "Changelog",
+    lede: "Every GitHub release of the open-source products. Snapshot as of 2026-10-08; each entry links to its release page.",
+    columns: { date: "Date", product: "Product", version: "Version", link: "Release" },
+    prerelease: "pre-release",
+    count: "releases",
+  },
   footer: {
-    rights: "© 2026 justn. All rights reserved.",
+    rights: "© 2026 Justn. All rights reserved.",
     terms: "Terms",
     privacy: "Privacy",
     language: "Language",
-    studio: "One-person software studio · South Korea",
+    studio: "We are Justn, a one-person software studio based in South Korea.",
+    company: "Company information",
+    legal: "Legal information",
+    changelog: "Changelog",
+    security: "Security reports",
   },
   notFound: {
     title: "Page not found",
@@ -173,7 +214,7 @@ export const en: Dictionary = {
     back: "Back to start",
     terms: {
       title: "Terms of Use",
-      intro: "These terms set the conditions for using company.justn.me (the \"Site\"), operated by justn (the \"Studio\"). The Site is a static, informational website that introduces the Studio and its products.",
+      intro: "These terms set the conditions for using company.justn.me (the \"Site\"), operated by Justn (the \"Studio\"). The Site is a static, informational website that introduces the Studio and its products.",
       sections: [
         { h: "1. Nature of the Site", p: ["The Site provides no sign-up, login, payment or user content upload features.", "Each product introduced on the Site runs separately at its own address, and its own terms are provided there. Sajurium and Bungae are built with a two-person team."] },
         { h: "2. Intellectual property", p: ["Unless stated otherwise, the text, design, images and code of the Site belong to the Studio.", "Products published as open source follow the licence stated in each repository."] },
@@ -185,7 +226,7 @@ export const en: Dictionary = {
     },
     privacy: {
       title: "Privacy Policy",
-      intro: "This policy explains how justn (the \"Studio\") handles personal data on company.justn.me (the \"Site\"). The Site is a static website with no forms or account features that collect visitors' personal data.",
+      intro: "This policy explains how Justn (the \"Studio\") handles personal data on company.justn.me (the \"Site\"). The Site is a static website with no forms or account features that collect visitors' personal data.",
       sections: [
         { h: "1. Data collected", p: ["The Site does not ask visitors for a name, email address, contact details or any other personal data.", "No analytics tools, advertising identifiers or tracking pixels are used."] },
         { h: "2. Cookies", p: ["The Site uses a single functional cookie (NEXT_LOCALE) to remember your language choice. It only holds the value \"ko\" or \"en\" and does not identify you. You can delete it in your browser settings."] },
